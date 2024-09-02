@@ -75,6 +75,10 @@ html {
 	-webkit-text-size-adjust: 100%;
 }
 
+
+#contact-section {
+	margin-top: 175px;
+}
 body {
 	margin: 0;
 }
