@@ -60,7 +60,7 @@
                         </ul>
                      </div>
                   </div>
-                  <div class="col-lg-4 d-flex justify-content-lg-end justify-content-between">
+                  <div class="col-lg-4 d-flex justify-content-lg-end justify-content-between align-items-center">
                      <div class="header-social social-links">
                         <ul>
                            <li><a href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
@@ -68,6 +68,33 @@
                            <li><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
                            <li><a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
                         </ul>
+                     </div>
+                     <div class="nav-media">
+                        <div class="humberger">
+                           <img src="assets/images/hamburger (1).png" alt="logo">
+                        </div>
+                        <div class="listItem">
+                           <ul class="nav-media-ul">
+                              <div class="delete">
+                                 <img class="delete-icon" src="assets/images/delete-button (1).png" alt="icon">
+                              </div>
+                              <li>
+                                 <a id="nav-item-links" href="#top-header">ASOSIY</a>
+                              </li>
+                              <li>
+                                 <a id="nav-item-links" href="#destination-section">MEHMONXONALAR</a>
+                              </li>
+                              <li>
+                                 <a id="nav-item-links" href="#best-section">ZIYORATLAR</a>
+                              </li>
+                              <li>
+                                 <a id="nav-item-links" href="#callback-section">HAMKORLAR</a>
+                              </li>
+                              <li>
+                                 <a id="nav-item-links" href="#contact-section">CONTACT</a>
+                              </li>
+                           </ul>
+                        </div>
                      </div>
                   </div>
                </div>
@@ -677,6 +704,21 @@
       integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ=="
       data-cf-beacon='{"rayId":"8bbda57b48549307","version":"2024.8.0","r":1,"serverTiming":{"name":{"cfL4":true}},"token":"2aaac9563824454ba89abdea91540009","b":1}'
       crossorigin="anonymous"></script>
+   <script>
+      let lists = document.querySelector('.listItem')
+      const humberger = document.querySelector('.humberger')
+      const deleteBtn =  document.querySelector('.delete-icon')
+
+      humberger.addEventListener('click', ()=> {
+         lists.classList.toggle('show')
+         humberger.style.display = "none"
+      })
+
+      deleteBtn.addEventListener('click', ()=> {
+         lists.classList.remove('show')
+          humberger.style.display = "block"
+      })
+   </script>
 </body>
 
 <!-- Mirrored from demo.bosathemes.com/html/travele/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 31 Aug 2024 14:18:44 GMT -->

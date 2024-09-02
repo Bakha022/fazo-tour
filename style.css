@@ -76,6 +76,80 @@ html {
 }
 
 
+.humberger {
+	display: none;
+}
+
+
+.listItem {
+	display: none;
+	position: absolute;
+	right: -300px;
+	transition: 1s;
+}
+
+
+.listItem ul {
+	background-color: #0077b5;
+	list-style-type: none;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	padding: 20px 10px;
+}
+
+.listItem ul li a {
+	color: white;
+}
+
+.nav-media {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.nav-media-ul .delete {
+	position: absolute;
+	top: 18px;
+	right: 10px;
+}
+
+.nav-media-ul {
+	position: relative;
+}
+
+.humberger img {
+	width: 24px;
+}
+
+@media (max-width: 949px) {
+	.humberger {
+		display: block;
+	}
+
+
+	.listItem.show {
+		display: block;
+	}
+
+	.site-identity {
+		width: 150px;
+		margin: 0 auto;
+	}
+
+	.headerBtn {
+		display: none;
+	}
+
+
+	.listItem {
+		top: 0;
+		position: fixed;
+		transition: 1s;
+		right: 0;
+	}
+}
+
 #contact-section {
 	margin-top: 175px;
 }
